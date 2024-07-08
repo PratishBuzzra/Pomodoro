@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Pomodoro Timer</a>
+        <nav class="titlebar">
+            <a href="pomodoro.html">Click here to know about Pomodoro Timer</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title">Pomodoro Web App</div>
+        <div class="pomodoro-types">
+            <button class="pomodoro active" onclick="getType(this, type_pomodore)">Pomodoro</button>
+            <button class="short_break" onclick="getType(this, type_shortbreak)">Short Break</button>
+            <button class="long_break" onclick="getType(this,type_longbreak)">Long Break</button>
+        </div>
+        <div class="time-bar">
+            <div class="time-bar-inner">
+                <h3 class="time-value">25 : 00</h3>
+            </div>
+        </div>
+        <div class="control-btn">
+            <button class="start-time">Start</button>
+            <button class="stop-time">Stop</button>
+            <button class="reset-time">Reset</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Coded By Pratish Bajracharya</p>
+        </div>
+        </footer>
+    <script src="main.js"></script>
+</body>
+</html>
