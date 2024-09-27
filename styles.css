@@ -11,7 +11,7 @@ body{
     height: 100%;
 }
 .header{
-    padding: 1rem 12%;
+    padding: 2rem 8% 1rem 12%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,17 +21,17 @@ body{
 .logo{
     font-size: 28px;
     font-weight: 750;
-    color: #03080e;
+    color: cyan;
 
 }
 .titlebar a{
     font-size: 25px;
-    color: #03080e;
+    color: cyan;
     font-weight: 700;
 
 }
 .container{
-    padding: 30px 20px 40px 20px;
+    padding: 30px 20px 50px 20px;
     width: 390px;
     display: flex;
     align-items: center;
@@ -68,7 +68,6 @@ body{
     width: 90px;
     color: #fff;
     background: #289193;
-    /* background: #830f10; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +81,7 @@ body{
 }
 .container .pomodoro-types button.active{
     background: #025050;
-    /* background: #4e0203 */
+    
 }
 .container .time-bar{
     height: 220px;
@@ -132,7 +131,7 @@ body{
     height: 40px;
     width: 90px;
     background: #289193;
-    /* background: #830f10; */
+    
     color: #fff;
     display: flex;
     align-items: center;
@@ -150,6 +149,41 @@ body{
 .container .control-btn .reset-time{
     position: absolute;
     right: 10px;
+}
+
+/* responsive  */
+
+@media (max-width: 950px) {
+    .header{
+        padding: 3rem 50px 0 50px; 
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .logo{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 3px;
+    
+    }
+    .titlebar a{
+        font-size: 15px;
+        font-weight: 750;
+        text-align: center;
+    
+    }
+    .container{
+        padding: 30px 20px 40px 20px;
+        width: 330px;
+       
+    }
+    .container .title{
+        font-size: 25px;
+    }
+    .container .pomodoro-types{
+        height: 35px;
+    } 
+    
 }
 
 
@@ -172,11 +206,11 @@ section{
     flex-direction: column;
     margin-left: 2.5rem;
     font-size: 50%;
-    color: #000;
-    margin-bottom: 2rem;
+    color: cyan;
+    margin-bottom: 0.5rem;
 }
 .home-content p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 
 }
@@ -185,10 +219,10 @@ section{
     
     justify-content: center;
     flex-direction: column;
-    font-size: 50%;
+    
 }
 .home-content ol li{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .home-img{
     display: flex;
@@ -206,13 +240,55 @@ section{
    align-items: center;
    justify-content: center;
     flex-wrap: wrap;
-    padding: 25px 9%;
-    color: #03080e;
-    border-top: 6px solid #03080e;   
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    color: cyan;
     font-weight: 700;
 
 
 }
 .footer-text{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    
+}
+.footer-text p a{
+    color: cyan;
+    text-decoration: underline;
+}
+
+/* about responsive */
+
+@media (max-width: 900px) {
+    section{
+        padding: 2rem 2.5% 2rem;
+    }
+    .home{
+        flex-direction: column;
+        
+        
+    }
+    .home-content{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .home-content p{
+        font-size: 16px;
+        text-align: justify;
+    
+    }
+    .home-content ol li{
+        font-size: 16px;
+    }
+    .home-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-img img{
+        width: 85vw;
+        margin-left: 0;
+    
+    
+    }
+
 }
